@@ -1,12 +1,14 @@
 import cv2
 import imutils
 import os
+import tkinter as tk
+from tkinter import filedialog
 
-loc = input("Enter the complete image location: ")            # enter image location here
-file = input("Enter the image file name (e.g., Test.jpg): ") # enter file name for image
+root = tk.Tk()
+root.withdraw()
+file_path = filedialog.askopenfilename()
 
-path = os.path.join(loc, file)
-img=cv2.imread(path)    # reads image
+img=cv2.imread(file_path)    # reads image
 new_path = input("Do you want to save image in same path? (Y/n) ").lower()
 
 if new_path=="n":
