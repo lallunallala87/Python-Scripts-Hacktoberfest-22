@@ -1,5 +1,4 @@
 import cv2
-import imutils
 import os
 
 loc = input("Enter the complete image location: ")            # enter image location here
