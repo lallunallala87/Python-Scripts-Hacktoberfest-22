@@ -1,11 +1,13 @@
 import PyPDF2
 import os
+import tkinter as tk
+from tkinter import filedialog
 
-loc = input("Enter Complete Pdf Location : ")
-file  = input("Enter file name (e.g., example.pdf): ")
+root = tk.Tk()
+root.withdraw()
+file_path = filedialog.askopenfilename()
 
-path = os.path.join(loc, file)
-pdf = open(path, 'rb')
+pdf = open(file_path, 'rb')
 pdfReader = PyPDF2.PdfFileReader(pdf)
 
 pages = pdfReader.numPages
