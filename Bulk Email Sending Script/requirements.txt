@@ -1,0 +1,8 @@
+et-xmlfile
+numpy
+openpyxl
+pandas
+python-dateutil
+python-decouple
+pytz
+six
