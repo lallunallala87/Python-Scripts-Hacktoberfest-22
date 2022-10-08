@@ -1,6 +1,4 @@
 import cv2
-import imutils
-import os
 import tkinter as tk
 from tkinter import filedialog
 
@@ -20,5 +18,3 @@ image_name = folder_selected + "/" + image_name + ".png"
 
 cv2.imwrite(image_name, grayImg)       # saving gray image
 print("Imaged saved => " + image_name)
-
-
