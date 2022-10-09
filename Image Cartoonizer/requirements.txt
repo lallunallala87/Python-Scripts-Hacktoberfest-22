@@ -1,0 +1,8 @@
+cv2
+easygui
+numpy
+imageio
+matplotlib
+tkinter
+tkinter
+PIL
